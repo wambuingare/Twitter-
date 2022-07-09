@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivPerson"
+            android:layout_width="154dp"
+            android:layout_height="167dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.028"
+            app:srcCompat="@drawable/nancy" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nancy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toEndOf="@+id/ivPerson"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="/@namcy"
+            app:layout_constraintBottom_toTopOf="@+id/tvMessage"
+            app:layout_constraintStart_toEndOf="@+id/ivPerson"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            app:layout_constraintVertical_bias="0.477" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="207dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="20dp"
+            android:text="dfgjklkjhgfdrtyujnbvcdfghjklkjhgfdfg"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPerson"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivPerson" />
+
+        <ImageView
+            android:id="@+id/tvShare"
+            android:layout_width="53dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvlike"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvlike"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+        <ImageView
+            android:id="@+id/tvreply"
+            android:layout_width="58dp"
+            android:layout_height="57dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvretweet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvretweet"
+            app:srcCompat="@drawable/ic_baseline_message_24" />
+
+        <ImageView
+            android:id="@+id/tvretweet"
+            android:layout_width="64dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="36dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvlike"
+            app:layout_constraintStart_toEndOf="@+id/tvreply"
+            app:layout_constraintTop_toTopOf="@+id/tvlike"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_baseline_repeat_24" />
+
+        <ImageView
+            android:id="@+id/tvlike"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvretweet"
+            app:layout_constraintTop_toBottomOf="@+id/tvMessage"
+            app:layout_constraintVertical_bias="0.065"
+            app:srcCompat="@drawable/ic_baseline_thumb_up_alt_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
